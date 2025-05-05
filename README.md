@@ -29,9 +29,9 @@ A Flask-based e-commerce website with MongoDB Atlas integration.
    ```
 4. Create a .env file with:
    ```
-   MONGODB_URI=your_mongodb_uri
+   MONGODB_URI=mongodb+srv://nik84810:Niku_2004@obarly.xwq8r3k.mongodb.net/
    DATABASE_NAME=Inventory
-   SECRET_KEY=your_secret_key
+   SECRET_KEY=your-secret-key-here
    ```
 5. Run the application:
    ```bash

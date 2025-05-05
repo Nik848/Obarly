@@ -28,7 +28,7 @@ def login_required(f):
 # MongoDB setup
 mongodb_uri = os.getenv('MONGODB_URI', 'mongodb+srv://nik84810:Niku_2004@obarly.xwq8r3k.mongodb.net/')
 database_name = os.getenv('DATABASE_NAME', 'Inventory')
-client = MongoClient(mongodb_uri)
+client = MongoClient(mongodb_uri, tls=True, tlsAllowInvalidCertificates=True)
 db = client[database_name]
 products_collection = db["Products"]
 users_collection = db["Users"]  # New collection for users
